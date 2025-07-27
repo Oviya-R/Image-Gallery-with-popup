@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Image Gallery</h1>
+  <div class="gallery">
+    <img src="images/image6.jpeg" onclick="openPopup(this.src)">
+    <img src="images/image7.jpeg" onclick="openPopup(this.src)">
+    <img src="images/image8.jpeg" onclick="openPopup(this.src)">
+  </div>
+
+  <div class="popup" id="popup">
+    <span class="close" onclick="closePopup()">X</span>
+    <img id="popupImage" src="" >
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
